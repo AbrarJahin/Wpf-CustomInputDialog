@@ -7,7 +7,7 @@ namespace Wpf_CustomInputDialog.Dialog.SignatureViewer
     /// Interaction logic for SignatureViewer.xaml
     /// </summary>
     /// https://www.wpf-tutorial.com/dialogs/creating-a-custom-input-dialog/
-    public partial class SignatureViewer : Window
+    public partial class SignatureViewer : Window, IDisposable
     {
         public SignatureViewer(string question, string defaultAnswer = "")
         {
@@ -19,13 +19,19 @@ namespace Wpf_CustomInputDialog.Dialog.SignatureViewer
         private void btnDialogOk_Click(object sender, RoutedEventArgs e)
         {
             this.DialogResult = true;
-            this.Close();
         }
 
         private void Window_ContentRendered(object sender, EventArgs e)
         {
             txtAnswer.SelectAll();
             txtAnswer.Focus();
+        }
+
+        public void Dispose()
+        {
+            //https://stackoverflow.com/a/568436/2193439
+            //this?.Dispose();
+            this.Close();
         }
 
         public string Answer

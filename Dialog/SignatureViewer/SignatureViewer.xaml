@@ -9,6 +9,8 @@
         SizeToContent="WidthAndHeight"
         WindowStartupLocation="CenterScreen"
         ContentRendered="Window_ContentRendered"
+        WindowStyle="ToolWindow"
+        ResizeMode="CanResizeWithGrip"
         Height="450" Width="800">
     <Grid Margin="15,15,15,111">
         <Grid.ColumnDefinitions>
