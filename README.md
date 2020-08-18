@@ -6,18 +6,18 @@ The current view is like-
 
 1. Open Dialog by clicking the `Enter Name` button-
 
-![image info](./doc/1.jpg)
+![1](./.doc/1.jpg)
 
 2. Dialog showing passed data from the caller-
 
-![image info](./doc/2.jpg)
+![2](./.doc/2.jpg)
 
 3. Dialog taking new data-
 
-![image info](./doc/3.jpg)
+![3](./.doc/3.jpg)
 
 4. Dialog passing the data from dialog to caller-
 
-![image info](./doc/4.jpg)
+![4](./.doc/4.jpg)
 
 It is the smallest and easiest way for using dialog in WPF.
